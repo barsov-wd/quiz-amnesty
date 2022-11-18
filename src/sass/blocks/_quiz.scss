@@ -1,0 +1,121 @@
+.quiz {
+    padding-top: 45px;
+    padding-bottom: 48px;
+    background: #FAFCFF;
+    position: relative;
+    z-index: 2;
+    &__images {
+        display: none;
+    }
+    &__image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+    &__text {
+        font-size: 30px;
+        line-height: 36px;
+        color: #0D4CD3;
+        margin-bottom: 20px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 5px 25px;
+        width: 470px;
+        height: 45px;
+        border: 1px solid #EE3F3F;
+        border-radius: 0px 20px 20px 20px;
+        margin-bottom: 45px;
+    }
+    &__item-text {
+        font-size: 20px;
+        line-height: 24px;
+        margin-left: 20px;
+        color: #0B1F33;
+    }
+    &__title {
+        font-family: 'Lato Black', sans-serif;
+        max-width: 971px;
+        width: 100%;
+        font-size: 47px;
+        line-height: 58px;
+        color: #0B1F33;
+        margin-bottom: 25px;
+    }
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 790px;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    &__radio {
+        display: none;
+
+        &:checked+.quiz__label__text {
+            background: #E4ECFD;
+            border-radius: 20px;
+            color: #0D4CD3;
+            font-weight: 900;
+            border: none;
+        }
+    }
+
+    &__input-group {
+        width: 385px;
+        height: 60px;
+    }
+
+    &__label {
+        display: block;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        color: #0B1F33;
+
+        &__text {
+            width: 100%;
+            height: 100%;
+            background: #FFFFFF;
+            border: 1px solid #0D4CD3;
+            border-radius: 20px;
+            font-size: 20px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            padding: 0 25px;
+            transition: all .2s;
+        }
+    }
+
+    &__button {
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+        width: 270px;
+        height: 60px;
+        margin-right: 20px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        height: 100%;
+        background: #FFFFFF;
+        border: 1px solid #0D4CD3;
+        border-radius: 20px;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        padding: 0 25px;
+
+        &::placeholder {
+            color: rgba(#0B1F33, .5)
+        }
+    }
+}

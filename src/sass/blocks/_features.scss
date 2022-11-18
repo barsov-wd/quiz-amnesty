@@ -1,0 +1,34 @@
+.features {
+    padding-bottom: 65px;
+    background: #FAFCFF;
+    &__text {
+        font-family: 'Lato Black', sans-serif;
+        font-size: 20px;
+        line-height: 24px;
+        color: #0B1F33;
+        margin-bottom: 30px;
+    }
+    &__items {
+        position: relative;
+        z-index: 3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        text-align: center;
+        padding: 12px 27px 7px;
+        width: 270px;
+        height: 123px;
+        border: 1px solid #0D4CD3;
+        border-radius: 20px;
+    }
+    &__item-descr {
+        font-size: 18px;
+        line-height: 22px;
+        color: #0B1F33;
+        &--color {
+            color: #EE3F3F;
+        }
+    }
+}

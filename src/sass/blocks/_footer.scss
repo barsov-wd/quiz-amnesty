@@ -1,0 +1,18 @@
+.footer {
+    position: relative;
+    z-index: 4;
+    padding: 5px 0;
+    background: #FFFFFF;
+    box-shadow: 0px -2px 4px rgba(11, 31, 51, 0.25);
+    text-align: center;
+    &__policy,
+    &__info {
+        font-size: 16px;
+        line-height: 25px;
+        color: #0B1F33;
+        text-decoration: underline;
+    }
+    &__info {
+        text-decoration: none;
+    }
+}
